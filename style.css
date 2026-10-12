@@ -1,0 +1,159 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f6f9;
+  margin: 0;
+  padding: 20px;
+}
+
+.container {
+  max-width: 950px;
+  margin: 0 auto;
+  background-color: #ffffff;
+  padding: 25px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+}
+
+h2 {
+  text-align: center;
+  color: #333;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+h3 {
+  color: #444;
+  margin-top: 0;
+  margin-bottom: 12px;
+}
+
+form {
+  background-color: #fafafa;
+  border: 1px solid #e2e8f0;
+  padding: 18px;
+  border-radius: 6px;
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 12px;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  font-size: 14px;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+input[type="text"],
+input[type="number"] {
+  width: 100%;
+  padding: 8px 10px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+input:focus {
+  outline: none;
+  border-color: #007bff;
+}
+
+.marks-row {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.btn-group {
+  margin-top: 15px;
+}
+
+button {
+  padding: 8px 18px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+#addBtn {
+  background-color: #007bff;
+  color: white;
+}
+
+#addBtn:hover {
+  background-color: #0056b3;
+}
+
+#resetBtn {
+  background-color: #6c757d;
+  color: white;
+  margin-left: 8px;
+}
+
+#resetBtn:hover {
+  background-color: #545b62;
+}
+
+.topper-box {
+  background-color: #d4edda;
+  color: #155724;
+  border: 1px solid #c3e6cb;
+  padding: 12px 15px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  font-size: 15px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: center;
+  font-size: 14px;
+}
+
+th {
+  background-color: #e9ecef;
+  color: #333;
+}
+
+tr:nth-child(even) {
+  background-color: #fdfdfd;
+}
+
+.topper-row {
+  background-color: #fff3cd !important;
+  font-weight: bold;
+}
+
+.delete-btn {
+  background-color: #dc3545;
+  color: white;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 12px;
+}
+
+.delete-btn:hover {
+  background-color: #bd2130;
+}
+
+@media (max-width: 700px) {
+  .marks-row {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Student Result Management System</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+    <h2>Student Result Management System</h2>
+
+    <!-- Input Form -->
+    <form id="studentForm">
+      <h3>Enter Student Details</h3>
+      
+      <div class="form-group">
+        <label for="rollNo">Roll Number:</label>
+        <input type="text" id="rollNo" placeholder="e.g. 05" required>
+      </div>
+
+      <div class="form-group">
+        <label for="name">Student Name:</label>
+        <input type="text" id="name" placeholder="e.g. Aditya Aushikar" required>
+      </div>
+
+      <div class="marks-row">
+        <div class="form-group">
+          <label for="sub1">Maths:</label>
+          <input type="number" id="sub1" min="0" max="100" placeholder="0-100" required>
+        </div>
+        <div class="form-group">
+          <label for="sub2">Physics:</label>
+          <input type="number" id="sub2" min="0" max="100" placeholder="0-100" required>
+        </div>
+        <div class="form-group">
+          <label for="sub3">Chemistry:</label>
+          <input type="number" id="sub3" min="0" max="100" placeholder="0-100" required>
+        </div>
+        <div class="form-group">
+          <label for="sub4">English:</label>
+          <input type="number" id="sub4" min="0" max="100" placeholder="0-100" required>
+        </div>
+        <div class="form-group">
+          <label for="sub5">Computer:</label>
+          <input type="number" id="sub5" min="0" max="100" placeholder="0-100" required>
+        </div>
+      </div>
+
+      <div class="btn-group">
+        <button type="submit" id="addBtn">Add Student</button>
+        <button type="reset" id="resetBtn">Reset</button>
+      </div>
+    </form>
+
+    <!-- Topper Display Section -->
+    <div class="topper-box">
+      <strong>Class Topper: </strong>
+      <span id="topperDisplay">No records added yet.</span>
+    </div>
+
+    <!-- Student Records Table -->
+    <h3>Student Records</h3>
+    <table id="studentTable">
+      <thead>
+        <tr>
+          <th>Roll No</th>
+          <th>Name</th>
+          <th>Maths</th>
+          <th>Physics</th>
+          <th>Chemistry</th>
+          <th>English</th>
+          <th>Computer</th>
+          <th>Total (500)</th>
+          <th>Percentage</th>
+          <th>Grade</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      <tbody id="tableBody">
+        <!-- Records added dynamically -->
+      </tbody>
+    </table>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
